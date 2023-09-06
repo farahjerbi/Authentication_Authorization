@@ -1,0 +1,80 @@
+<div id="mainNavigation">
+  <nav role="navigation">
+    <div class="py-3 text-center border-bottom">
+      <!-- <img src="assets/images/logo.png" alt="" class="invert"> -->
+      <h2>Welcome to LifeTimeBook , {{fullName}} !</h2>
+    </div>
+  </nav>
+  <div class="navbar-expand-md">
+    <div class="navbar-dark text-center my-2">
+      <button class="navbar-toggler w-75" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span> <span class="align-middle">Menu</span>
+      </button>
+    </div>
+    <div class="text-center mt-3 collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mx-auto ">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" >Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Books</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Favorites</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Award Winners </a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link" > <button (click)="logout()" class="button_logout"> Log Out  </button></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="cards-wrapper" style="display: flex; align-items: flex-start; ">
+  <div class="card" style="width: 18rem; margin-left: 40px; margin-top: 90px; margin-right: 50px; ">
+    <img src="assets/images/logo.png" class="custom-img" alt="..." >
+    <div class="card-body">
+      <h5 class="card-title">{{fullName}}</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a  class="btn btn-primary" (click)="login()" >Add a Book </a>
+    </div>
+  </div>
+
+
+  <div class="carousel_wrapper" style="flex: 1;"> 
+    <ngb-carousel class="square-carousel" *ngIf="Books && Books.length > 0">
+      <ng-template ngbSlide  *ngFor="let book of Books">
+        <div class="picsum-img-wrapper">
+          <img [src]="imageBaseUrl+ book.image" alt="Book slide" class="img_slider" />
+        </div>
+        <div class="carousel-caption">
+          <h3 style="color: black;">{{book.title}}</h3>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">View details</button>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+  
+
+<!-- 
+  <div class="card" style="width: 80rem ; margin-top: 90px;">
+    <div class="card-body">
+      <h5 class="card-title" style="color: rgb(21, 7, 110) ;">List of your published books</h5>
+        <div class="container" style="  border: 2px solid blue ; border-radius: 1rem; width: 330px; ;" >
+          <img src="assets/images/logo.png" style="width: 300px;" class="custom-img" >
+          <h3>Title of the book</h3>
+          <div class="Book-Buttons" style="display: flex;">
+            <button class="btn btn-primary" style="margin-bottom: 15px; margin-right: 30px;">See more details </button>
+            <button class="btn btn-secondary" style="margin-bottom: 15px;">Delete Book </button>
+          </div>
+       
+        </div>
+
+    </div>
+  </div> -->
+</div>
+</div>
+
+
+

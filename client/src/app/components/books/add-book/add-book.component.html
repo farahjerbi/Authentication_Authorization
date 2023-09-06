@@ -1,0 +1,70 @@
+<div class="outer " >
+    <div class="container float-end">
+        <div class="row">
+            <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3 " >
+                <div class="panel border bg-white">
+                    <div class="panel-heading">
+                        <h3 class="pt-3 font-weight-bold">
+                            Add Book
+                        </h3>
+                        <div class="panel-body p-3">
+                            <form [formGroup]="addBook" >
+
+                                <div class="form-group pt-3">
+                                    <div class="input-field">
+                                        <span class="fa fa-user p-2"></span>
+                                            <input formControlName="title" type="text" placeholder="Title" class="input">
+                                    </div>
+                                </div>
+                                <div class="form-group pt-3">
+                                    <div class="input-field">
+                                        <span class="fa fa-user p-2"></span>
+                                            <input formControlName="authorName" type="text" placeholder="AuthorName" class="input">
+                                    </div>
+                                </div>
+                                
+
+                                <div class="form-group pt-3">
+                                    <div class="input-field">
+                                        <span class="fa fa-user p-2"></span>
+                                            <input formControlName="description"  type="text" placeholder="Description" class="input">
+                                    </div>
+                                </div>
+                            
+
+                                <div class="form-group pt-3">
+                                    <div class="input-field">
+                                        <span class="fa fa-user p-2"></span>
+                                            <input type="file" placeholder="Image" class="input" (change)="onFileSelected($event)" formControlName="" >
+                                    </div>
+                                </div>
+
+                                <div class="form-group pt-3">
+                                    <div class="input-field">
+                                        <span class="fa fa-user p-2"></span>
+                                            <input formControlName="releaseDate"  type="date" class="input">
+                                    </div>
+                                </div>
+                              
+                                <div class="form-group pt-3">
+                                    <select formControlName="category" class="form-control">
+                                      <ng-container *ngIf="categories && categories.length > 0">
+                                        <option *ngFor="let category of categories " [value]="category">{{ category }}</option>
+                                      </ng-container>
+                                    </select>
+                                  </div>
+                                  
+                                                             
+                                <button [disabled]="addBook.invalid" type="submit" class="btn btn-primary btn-lock mt-4 w-100"> Add Book </button>
+                                <button   class="btn btn-secondary btn-lock mt-4 w-100"> leave </button>
+
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
