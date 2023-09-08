@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MSI\\Desktop\\Angular_DotNet\\server\\CRUDApp\\CRUD\\CRUD.csproj": {}
+    "C:\\Users\\MSI\\Desktop\\Authentication_Authorization\\server\\CRUDApp\\CRUD\\CRUD.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MSI\\Desktop\\Angular_DotNet\\server\\CRUDApp\\CRUD\\CRUD.csproj": {
+    "C:\\Users\\MSI\\Desktop\\Authentication_Authorization\\server\\CRUDApp\\CRUD\\CRUD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MSI\\Desktop\\Angular_DotNet\\server\\CRUDApp\\CRUD\\CRUD.csproj",
+        "projectUniqueName": "C:\\Users\\MSI\\Desktop\\Authentication_Authorization\\server\\CRUDApp\\CRUD\\CRUD.csproj",
         "projectName": "CRUD",
-        "projectPath": "C:\\Users\\MSI\\Desktop\\Angular_DotNet\\server\\CRUDApp\\CRUD\\CRUD.csproj",
+        "projectPath": "C:\\Users\\MSI\\Desktop\\Authentication_Authorization\\server\\CRUDApp\\CRUD\\CRUD.csproj",
         "packagesPath": "C:\\Users\\MSI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MSI\\Desktop\\Angular_DotNet\\server\\CRUDApp\\CRUD\\obj\\",
+        "outputPath": "C:\\Users\\MSI\\Desktop\\Authentication_Authorization\\server\\CRUDApp\\CRUD\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MSI\\AppData\\Roaming\\NuGet\\NuGet.Config",

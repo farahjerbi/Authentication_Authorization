@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xnudHcJYslApw0VvQg46OeUMf0vACOE/MO+AGHfAiCjRMRv1sunn+39ylEGoILULuYtui5kigGDnsYGYab57Sw==",
+  "dgSpecHash": "jyGOe2L6dJshjANWIXmazbtqormuK3k0wCs9ybpyfF2Pxm5vAFBLGxP0wMuRGNTJSeCOyw1vkCZgL8fywoOYdg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MSI\\Desktop\\Angular_DotNet\\server\\CRUDApp\\CRUD\\CRUD.csproj",
+  "projectFilePath": "C:\\Users\\MSI\\Desktop\\Authentication_Authorization\\server\\CRUDApp\\CRUD\\CRUD.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MSI\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\MSI\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
